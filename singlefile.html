@@ -852,9 +852,9 @@ function displayFeaturedZones(featuredZones) {
         featuredContainer.appendChild(zoneItem);
     });
     if (featuredContainer.innerHTML === "") {
-        featuredContainer.innerHTML = "No featured zones found.";
+        featuredContainer.innerHTML = "No trending games found.";
     } else {
-        document.getElementById("allZonesSummary").textContent = `Featured Zones (${featuredZones.length})`;
+        document.getElementById("allZonesSummary").textContent = `Trending Games (${featuredZones.length})`;
     }
 
     const lazyImages = document.querySelectorAll('#featuredZones img.lazy-zone-img');
@@ -900,7 +900,7 @@ function displayZones(zones) {
     if (container.innerHTML === "") {
         container.innerHTML = "No zones found.";
     } else {
-        document.getElementById("allSummary").textContent = `All Zones (${zones.length})`;
+        document.getElementById("allSummary").textContent = `All Games (${zones.length})`;
     }
 
     const lazyImages = document.querySelectorAll('img.lazy-zone-img');
